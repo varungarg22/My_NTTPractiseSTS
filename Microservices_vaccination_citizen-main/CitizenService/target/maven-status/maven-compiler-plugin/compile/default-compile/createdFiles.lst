@@ -1,0 +1,4 @@
+com\codedecode\microservices\CitizenService\repositories\CitizenRepo.class
+com\codedecode\microservices\CitizenService\Entity\Citizen.class
+com\codedecode\microservices\CitizenService\Controller\CitizenController.class
+com\codedecode\microservices\CitizenService\CitizenServiceApplication.class

@@ -1,0 +1,11 @@
+package com.codedecode.demo.custom.exception;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class BusinessException {
+
+	
+	private String errorCode;
+	private String errorMessage;
+}

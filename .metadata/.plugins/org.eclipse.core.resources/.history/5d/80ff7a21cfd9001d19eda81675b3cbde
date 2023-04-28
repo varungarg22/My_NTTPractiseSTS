@@ -1,0 +1,21 @@
+package com.codedecode.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.codedecode.demo.entity.Employee;
+import com.codedecode.demo.repos.EmployeeCrudRepo;
+
+@Service
+// We can use here @ Component as well its a fancy thing to explain this it is a service readable code
+
+
+public class EmployeeService implements EmployeeServiceInterface{
+
+	
+	@Autowired
+	private EmployeeCrudRepo crudRepo;
+	
+	public void addEmployee(Employee employee) {
+	}
+}

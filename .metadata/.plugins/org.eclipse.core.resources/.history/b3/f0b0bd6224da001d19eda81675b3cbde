@@ -1,0 +1,5 @@
+package com.codedecode.demo.advice;
+
+public class MyControllerAdvice {
+
+}

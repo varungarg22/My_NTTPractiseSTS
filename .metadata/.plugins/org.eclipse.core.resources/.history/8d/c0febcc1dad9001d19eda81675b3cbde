@@ -1,0 +1,26 @@
+package com.codedecode.demo.custom.exception;
+
+import org.springframework.stereotype.Component;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Component
+public class BusinessException extends RuntimeException{
+
+	
+	/**
+	 * 
+	 */
+	
+	@Setter
+	@Getter
+	@NoArgsConstructor
+	
+	private static final long serialVersionUID = 1L;
+	private String errorCode;
+	private String errorMessage;
+}

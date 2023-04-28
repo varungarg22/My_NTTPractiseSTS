@@ -1,0 +1,45 @@
+package com.codedecode.demo.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.codedecode.demo.entity.Employee;
+import com.codedecode.demo.repos.EmployeeCrudRepo;
+import com.codedecode.demo.service.EmployeeServiceInterface;
+
+@RestController
+@RequestMapping("/codev")
+public class EmployeeController {
+
+/*	@Autowired
+	EmployeeCrudRepo empCrud;
+	@GetMapping
+	public List<Employee> getAllEmployees(){
+		
+		System.out.println("Getting All Employees");
+		System.out.println("ss"+empCrud.findAll());
+		return empCrud.findAll();
+	*/
+	@Autowired
+	private EmployeeServiceInterface empServiceInterface;
+	
+	
+	@PostMapping("/save")
+	public ResponseEntity<Employee> addEmployee(@RequestBody Employee employee){
+		empServiceInterface.addEmployee(employee);
+		Employee employeeSaved= empServiceInterface.addEmployee(employee);
+		return employeeSaved;
+		
+	}
+	
+		
+	}
+

@@ -1,0 +1,5 @@
+package com.codedecode.demo.service;
+
+public interface EmployeeServiceInterface {
+
+}
